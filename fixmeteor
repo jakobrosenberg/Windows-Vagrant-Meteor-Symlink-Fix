@@ -1,0 +1,29 @@
+#!/bin/bash
+
+if [ -d ".meteor" ]; then
+DIR="${PWD##}"
+LOCALDIR=/home$DIR/.meteor/local
+PACKAGESDIR=/home$DIR/packages
+echo "DIR: $DIR"
+
+
+echo create mount source
+mkdir -p $LOCALDIR
+mkdir -p $PACKAGESDIR
+
+echo replace targets with empty directories
+umount .meteor/local -f
+rm .meteor/local -rf
+mkdir .meteor/local
+umount packages -f
+rm packages -rf
+mkdir packages
+
+echo mount sources to targets
+mount --bind $LOCALDIR .meteor/local
+mount --bind $PACKAGESDIR packages
+
+echo done
+else
+echo Can only be run from a Meteor app directory
+fi
