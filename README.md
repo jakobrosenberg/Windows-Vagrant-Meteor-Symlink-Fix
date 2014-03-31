@@ -24,7 +24,7 @@ Run the command below in your shell
 
 Usage
 -----
-Type ``fixmeteor`` from any Meteor app directory.
+Type ``fixmeteor`` or ``fixmeteorlight`` from any Meteor app directory.
 
 Example:
 ```
