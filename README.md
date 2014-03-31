@@ -8,12 +8,10 @@ Install
 -------
 Run one of the following commands below in your shell
 
-.meteor/local and packages
---------------------------
+**.meteor/local and packages**
 ``wget --directory-prefix /usr/bin https://raw.githubusercontent.com/jakobrosenberg/Windows-Vagrant-Meteor-Symlink-Fix/master/fixmeteor && chmod +x /usr/bin/fixmeteor``
 
-.meteor/local
--------------
+**.meteor/local**
 ``wget --directory-prefix /usr/bin https://raw.githubusercontent.com/jakobrosenberg/Windows-Vagrant-Meteor-Symlink-Fix/master/fixmeteorlight && chmod +x /usr/bin/fixmeteorlight``
 
 
