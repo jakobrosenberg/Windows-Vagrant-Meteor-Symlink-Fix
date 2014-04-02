@@ -16,6 +16,7 @@ mkdir .meteor/local
 
 echo mount sources to targets
 mount --bind $LOCALDIR .meteor/local
+chown vagrant:vagrant .meteor/local
 
 echo done
 else
