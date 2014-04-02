@@ -2,7 +2,7 @@
 
 if [ -d ".meteor" ]; then
 DIR="${PWD##}"
-LOCALDIR=/home$DIR/.meteor/local
+LOCALDIR=/home/vagrant$DIR/.meteor/local
 echo "DIR: $DIR"
 
 
